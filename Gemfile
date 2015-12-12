@@ -30,6 +30,7 @@ gem 'sass-rails', '~>5.0.0'
 gem 'haml'
 gem 'haml-rails'
 gem 'simple_form'
+gem 'devise'
 
 group :development do
   gem 'pry'
