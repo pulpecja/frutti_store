@@ -1,0 +1,6 @@
+= simple_form_for(@category) do |f|
+  = f.input :name
+  .actions
+    = f.button 'submit'
+    = link_to 'Cancel', :back, class: 'button'
+

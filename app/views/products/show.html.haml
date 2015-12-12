@@ -1,0 +1,10 @@
+%br
+.large-3.small-12.column
+  = image_tag @product.photo
+.large-9.small-12.column
+  %h3
+    = @product.name
+  %p.label.movie-label.radius.mb1
+    =  "#{@product.price} PLN"
+  %p
+    = @product.description

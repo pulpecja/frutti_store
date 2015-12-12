@@ -1,0 +1,13 @@
+.column
+  %ul.products-grid.no-bullet.row
+    - @products.each do |product|
+      %li.large-3.medium-4.small-12.column
+        .product-card.padly
+          = link_to product, class: "photo" do
+            = image_tag product.photo
+          .product-info.ell.glassy-bg.padmy.padlx
+            .title
+              %h6
+                = product.name
+            %p.left.price.label.product-label.radius
+              = "#{product.price} PLN"

@@ -1,0 +1,9 @@
+%h4.column Featured categories
+.column
+  %ul.categories-grid.no-bullet.row
+    - @categories.each do |category|
+      %li.large-3.medium-4.small-12.column
+        .category-info.ell.glassy-bg.padmy.padlx
+          .title
+            %h6
+              = category.name
