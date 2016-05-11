@@ -31,6 +31,8 @@ gem 'haml'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'devise'
+gem 'redis', '~> 3.0.1'
+gem 'hiredis', '~> 0.4.5'
 
 group :development do
   gem 'pry'

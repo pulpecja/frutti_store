@@ -4,7 +4,13 @@
 .large-9.small-12.column
   %h3
     = @product.name
-  %p.label.movie-label.radius.mb1
+  %p.label.product-label.radius.mb1
     =  "#{@product.price} PLN"
   %p
     = @product.description
+
+- if signed_in?
+  = link_to "", class: "button", data: { target: @cart_action, addUrl: add_to_cart_path(@product), removeUrl: remove_from_cart_path(@product) } do
+    %i.fi-shopping-cart
+    %span= @cart_action
+    Cart

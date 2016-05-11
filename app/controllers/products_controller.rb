@@ -6,7 +6,9 @@ class ProductsController < ApplicationController
   end
 
   def show
-  end
+    @product = Product.find(params[:id])
+    @cart_action = @product.cart_action current_user.try :id
+end
 
   def new
     @product = Product.new
@@ -50,12 +52,10 @@ class ProductsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
       params.require(:product).permit(:name, :price, :description, :photo_url, :category_id)
     end

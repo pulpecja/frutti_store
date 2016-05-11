@@ -69,6 +69,7 @@ GEM
       haml (>= 3.1, < 5.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
+    hiredis (0.4.5)
     html2haml (2.0.0)
       erubis (~> 2.7.0)
       haml (~> 4.0.0)
@@ -122,6 +123,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    redis (3.0.7)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     ruby_parser (3.6.4)
@@ -175,6 +177,7 @@ DEPENDENCIES
   foundation-rails (~> 5.5.0)
   haml
   haml-rails
+  hiredis (~> 0.4.5)
   jbuilder (~> 2.0)
   jquery-rails
   pg
@@ -182,6 +185,7 @@ DEPENDENCIES
   pry-rails
   quiet_assets
   rails (= 4.1.9)
+  redis (~> 3.0.1)
   sass-rails (~> 5.0.0)
   sdoc (~> 0.4.0)
   simple_form
